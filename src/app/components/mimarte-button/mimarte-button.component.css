@@ -1,0 +1,59 @@
+.mimarte-button {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mimarte-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+}
+
+.mimarte-button:active {
+  transform: scale(.85);
+}
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8); /* optional frosted effect */
+  backdrop-filter: blur(6px);
+  pointer-events: none; /* allows clicks to pass through if needed */
+}
+
+.overlay-text {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: #d63384;
+  text-align: center;
+  padding: 1rem 2rem;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.overlay-gif {
+  background: rgba(255, 255, 255, 0.8); /* optional frosted effect */
+  backdrop-filter: blur(6px);
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease;
+}

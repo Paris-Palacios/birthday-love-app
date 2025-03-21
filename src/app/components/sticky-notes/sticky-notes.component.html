@@ -1,0 +1,13 @@
+<div
+  class="sticky-note d-flex align-items-center
+   justify-content-center"
+  [ngStyle]="{
+    top: top + 'px',
+    left: left + 'px',
+    transform: 'rotate(' + randomRotation + 'deg)',
+  }"
+>
+  <p class="note-text">
+    {{ phrase }}
+  </p>
+</div>
